@@ -212,9 +212,13 @@
 
       h2 Conclusión
 
-      .bg-azul.p-4(data-aos='fade-up')
+      .bg-azul.p-4.mb-5(data-aos='fade-up')
         span La evaluación de riesgos es una fase fundamental en la gestión de proyectos de BI, dado que permite anticipar y mitigar problemas que pueden afectar la calidad de los datos, la integración de sistemas y la adopción por parte de los usuarios. La aplicación de metodologías como la Matriz de Riesgos, FMEA y Monte Carlo ayuda a reducir la incertidumbre y a optimizar la toma de decisiones. 
 
+      .bg-full-width.border-top.actividad(style='background-color: #ebf1f5; border-top: 5px solid #f5c145 !important')
+        .p-4.p-md-5
+          #Actividad
+            <Actividad :cuestionario='cuestionario'/>
 
 </template>
 
@@ -225,177 +229,80 @@ export default {
   components: {
     Actividad,
   },
-  data() {
-    return {
-      cuestionario: {
-        tema: 'Herramientas colaborativas para la construcción de paz',
-        titulo: 'Ponte a prueba',
-        introduccion:
-          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
-        barajarPreguntas: true,
-        preguntas: [
-          {
-            id: 1,
-            texto:
-              '¿Cuál de las siguientes es una característica fundamental de los derechos humanos?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Son temporales y cambiantes',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Son universales y aplican a todas las personas',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Son exclusivos de ciertos grupos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Son opcionales',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 2,
-            texto:
-              '¿Cuál de las siguientes afirmaciones sobre la diversidad cultural es correcta?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Fomenta la homogeneización cultural',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Promueve el respeto y la aceptación de las diferencias',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Debilita la identidad cultural de los pueblos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Limita las oportunidades de interacción',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 3,
-            texto:
-              'La mediación en un conflicto tiene como objetivo principal:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Imponer una solución rápida',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Facilitar el diálogo entre las partes',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Determinar la culpabilidad',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar las preocupaciones de una parte',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 4,
-            texto: 'En un foro comunitario, es importante:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Escuchar solo a las autoridades',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Fomentar la participación de todos los miembros',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Decidir por votación sin consultar a los demás',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Excluir las opiniones de los más jóvenes',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 5,
-            texto:
-              '¿Qué busca la justicia restaurativa en el contexto de un conflicto?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Aplicar una sanción severa',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Reparar el daño y restablecer las relaciones',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Castigar a las partes involucradas',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar el contexto del conflicto',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-        ],
-        mensaje_final_aprobado:
-          '¡Felicidades! Has superado la prueba con éxito.',
-        mensaje_final_reprobado:
-          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
-      },
-    }
-  },
+  data: () => ({
+    cuestionario: {
+      tema: 'UNIDAD 1',
+      titulo: 'Ponte a prueba',
+      introduccion:
+        'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+      barajarPreguntas: true,
+      preguntas: [
+        {
+          id: 1,
+          texto:
+            '¿Cuál de las siguientes afirmaciones describe mejor la gestión de proyectos?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Es un proceso continuo que se realiza de manera indefinida en la organización.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Es un esfuerzo temporal con un inicio y un fin definidos, destinado a crear un producto, servicio o resultado único.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Es una actividad repetitiva que se basa en la producción en serie dentro de una empresa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Se enfoca únicamente en la administración de costos dentro de una organización.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 2,
+          texto:
+            'En la gestión de proyectos de inteligencia de negocios (BI), las metodologías ágiles son más recomendables que las tradicionales en entornos dinámicos y cambiantes.',
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Verdadero', esCorrecta: true },
+            { id: 'b', texto: 'Falso', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 3,
+          texto:
+            'El modelo ___________ es una metodología tradicional de gestión de proyectos que sigue un enfoque secuencial donde cada fase debe completarse antes de pasar a la siguiente.',
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Scrum', esCorrecta: false },
+            { id: 'b', texto: 'Kanban', esCorrecta: false },
+            { id: 'c', texto: 'Waterfall', esCorrecta: true },
+            { id: 'd', texto: 'Lean', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+      ],
+      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_reprobado:
+        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
+    },
+  }),
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
