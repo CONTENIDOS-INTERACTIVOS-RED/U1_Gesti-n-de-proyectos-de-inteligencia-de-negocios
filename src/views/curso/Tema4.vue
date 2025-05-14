@@ -297,6 +297,36 @@ export default {
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
+        {
+          id: 4,
+          texto:
+            'Relaciona cada término con su definición correspondiente: <br><br>Término:<br>1. KPI (Key Performance Indicator)<br>2. Planificación estratégica<br>3. Evaluación de riesgos<br>4. Gestión de recursos <br><br>Definición:<br>A. Proceso de análisis de amenazas en un proyecto.<br>B. Métrica utilizada para evaluar el desempeño.<br>C. Estrategia para definir objetivos y metas.<br>D. Optimización del uso de materiales y personal. ',
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: '1 - B, 2 - A, 3 - C, 4 - D', esCorrecta: false },
+            { id: 'b', texto: '1 - A, 2 - B, 3 - C, 4 - D', esCorrecta: false },
+            { id: 'c', texto: '1 - B, 2 - C, 3 - A, 4 - D', esCorrecta: true },
+            { id: 'd', texto: '1 - A, 2 - C, 3 - B, 4 - D', esCorrecta: false },
+          ],
+          mensaje_correcto:
+            'Estos conceptos son fundamentales en la gestión de proyectos de BI para garantizar eficiencia y control en la ejecución del proyecto (PMI, 2021).',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 5,
+          texto:
+            '¿Cuáles de los siguientes elementos son clave en la gestión de riesgos en proyectos de BI? (Selecciona todas las que correspondan).<br><br>A) Identificación de riesgos<br>B) Estrategias de mitigación<br>C) Ignorar posibles problemas y seguir adelante<br>D) Monitoreo y control continuo de riesgos',
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'A, B, C', esCorrecta: false },
+            { id: 'b', texto: 'A, B, D', esCorrecta: true },
+            { id: 'c', texto: 'A, C, D', esCorrecta: false },
+            { id: 'd', texto: 'B, C, D', esCorrecta: false },
+          ],
+          mensaje_correcto:
+            'La gestión de riesgos en proyectos de BI implica identificar posibles problemas, desarrollar estrategias de mitigación y monitorear el estado del proyecto para minimizar impactos negativos (Fuentes Adrianzén & Carrión Barco, 2021).',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
       ],
       mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
       mensaje_final_reprobado:

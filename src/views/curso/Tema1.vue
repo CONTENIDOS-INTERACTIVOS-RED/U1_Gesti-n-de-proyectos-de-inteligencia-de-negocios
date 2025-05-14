@@ -1,17 +1,15 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'1. Introducción a la pertinencia y funcionalidad de la propuesta didáctica'")
+  BannerInterno(:subTitulo="'1. Principios de gestión de proyectos'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
     .row.mb-4
-      .col-12.col-md-6.col-xl-4.d-flex
-        .bg-azul.p-4.rounded
-          span La gestión de proyectos ha evolucionado significativamente desde sus orígenes hasta convertirse en una disciplina clave en diversos sectores, incluidas la tecnología, la construcción, la manufactura y, más recientemente, la Inteligencia de Negocios (BI). La necesidad de administrar eficazmente recursos, costos, plazos y riesgos, ha llevado a la creación de metodologías y estándares que facilitan la planificación y ejecución de proyectos exitosos (Moreno-Monsalve & Grueso Hinestroza, 2024).
-      .col-4.d-none.d-md-block
+      .col-10.col-lg-6.col-xl-4.mx-auto.bg-azul.p-4.d-flex(data-aos='fade-up')
+        span La gestión de proyectos ha evolucionado significativamente desde sus orígenes hasta convertirse en una disciplina clave en diversos sectores, incluidas la tecnología, la construcción, la manufactura y, más recientemente, la Inteligencia de Negocios (BI). La necesidad de administrar eficazmente recursos, costos, plazos y riesgos, ha llevado a la creación de metodologías y estándares que facilitan la planificación y ejecución de proyectos exitosos (Moreno-Monsalve & Grueso Hinestroza, 2024).
+      .col-4.d-none.d-xl-block
         img(src='@/assets/curso/unidad/img-6.png', alt='Texto que describa la imagen')
-      .col-12.col-md-6.bg-azul-claro.col-xl-4.d-flex
-        .bg-azul-claro.p-4.rounded
-          span De acuerdo con el Project Management Institute (PMI), un proyecto es un esfuerzo temporal llevado a cabo para crear un producto, servicio o resultado único, diferenciándolo de las operaciones continuas de una organización. La gestión de proyectos, por lo tanto, consiste en la <b>aplicación de conocimientos, habilidades, herramientas y técnicas</b>, para cumplir con los requisitos del proyecto dentro de restricciones específicas, como el alcance, el tiempo y el costo (Hernández Gutiérrez, López Calvajar & Gutiérrez Rodríguez, 2022).
+      .col-10.col-lg-6.col-xl-4.mx-auto.bg-azul-claro.p-4.d-flex(data-aos='fade-up')
+        span De acuerdo con el Project Management Institute (PMI), un proyecto es un esfuerzo temporal llevado a cabo para crear un producto, servicio o resultado único, diferenciándolo de las operaciones continuas de una organización. La gestión de proyectos, por lo tanto, consiste en la <b>aplicación de conocimientos, habilidades, herramientas y técnicas</b>, para cumplir con los requisitos del proyecto dentro de restricciones específicas, como el alcance, el tiempo y el costo (Hernández Gutiérrez, López Calvajar & Gutiérrez Rodríguez, 2022).
 
     p.text-bold.mb-4 La evolución de la gestión de proyectos ha pasado de ser un enfoque empírico a una disciplina estructurada, fundamentada en metodologías formales y estándares internacionales, tales como la Guía del PMBOK (Project Management Body of Knowledge) del PMI y otras metodologías ágiles y tradicionales, aplicadas a la gestión de proyectos. 
     .row.mb-4
